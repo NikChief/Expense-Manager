@@ -15,10 +15,20 @@ function App() {
     setExpenses(prevExpenses => { return [expense, ...prevExpenses]})
   }
   
+  const deleteExpenseHandler = (itemId) => {
+    console.log('App', itemId);
+    setExpenses(prevExpenses=> {
+      const deletedExpenseId = expenses.findIndex((expense)=>expense.id===itemId);
+      const expensesWithoutDeleted = [...prevExpenses];
+      expensesWithoutDeleted.splice(deletedExpenseId, 1);
+      return expensesWithoutDeleted;
+    })
+  }
+
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
-      <Expenses expenses={expenses}/>
+      <Expenses expenses={expenses} extractDIFromExpenses={deleteExpenseHandler}/>
     </div>
   );
 }

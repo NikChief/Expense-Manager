@@ -1,0 +1,25 @@
+.expense-item__delete {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border-radius: 12px;
+}
+
+.expense-item__delete button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  padding: 0;
+}
+
+@media (min-width: 580px) {
+
+  .expense-item__delete button {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
