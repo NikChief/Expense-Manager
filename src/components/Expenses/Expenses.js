@@ -6,7 +6,7 @@ import Filter from '../Filter/Filter';
 import ExpensesList from '../ExpensesList/ExpensesList';
 import ExpensesChart from '../ExpensesChart/ExpensesChart';
 
-function Expenses({ expenses, extractDIFromExpenses }) {
+function Expenses({ expenses, extractDIFromExpenses, extractUIFromExpenses }) {
   const [filteredYear, setFilteredYear] = useState('2022');
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear)
@@ -14,6 +14,10 @@ function Expenses({ expenses, extractDIFromExpenses }) {
   const filteredExpenses = expenses.filter(expense => expense.date.getFullYear().toString() === filteredYear);
   const extractDeletedItem = (itemId) => {
     extractDIFromExpenses(itemId); 
+  }
+
+  const extractUpgratedItem = (updatingId, updatingItemData) => {
+    extractUIFromExpenses(updatingId, updatingItemData)
   }
 
   return (
@@ -24,7 +28,7 @@ function Expenses({ expenses, extractDIFromExpenses }) {
           onChangeFilter={filterChangeHandler}
         />
         < ExpensesChart expenses={filteredExpenses} />
-        < ExpensesList expenses={filteredExpenses} extractDIFromEL={extractDeletedItem}/>
+        < ExpensesList expenses={filteredExpenses} extractDIFromEL={extractDeletedItem} extractUIFromEL={extractUpgratedItem}/>
       </Card>
     </div>
   );

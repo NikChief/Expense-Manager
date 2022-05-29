@@ -2,11 +2,15 @@ import React from 'react';
 import ExpenseItem from '../ExpenseItem/ExpenseItem';
 import './ExpensesList.css';
 
-function ExpensesList({ expenses, extractDIFromEL }) {
+function ExpensesList({ expenses, extractDIFromEL, extractUIFromEL }) {
   let expensesContent = <p>No expenses found</p>;
 
   const extractDeletedItem = (itemId) => {
     extractDIFromEL(itemId)
+  }
+
+  const extractUpgratedItem = (updatingId, updatingItemData) => {
+    extractUIFromEL(updatingId, updatingItemData)
   }
 
   if (expenses.length  === 0) {
@@ -18,6 +22,7 @@ function ExpensesList({ expenses, extractDIFromEL }) {
         key={expense.id}
         expense={expense}
         extractDIFromEI = {extractDeletedItem}
+        extractUIFromEI={extractUpgratedItem}
       />
     ))}
   </ul>

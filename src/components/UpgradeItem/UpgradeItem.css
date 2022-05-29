@@ -1,4 +1,4 @@
-.expense-item__delete {
+.expense-item__update {
   font-size: 1rem;
   font-weight: bold;
   color: white;
@@ -6,7 +6,7 @@
   border-radius: 12px;
 }
 
-.expense-item__delete button {
+.expense-item__update button {
   font: inherit;
   cursor: pointer;
   border: 1px solid #40005d;
@@ -16,15 +16,15 @@
   padding: 0;
 }
 
-.expense-item__delete button:hover,
-.expense-item__delete button:active {
+.expense-item__update button:hover,
+.expense-item__update button:active {
   background-color: #510674;
   border-color: #510674;
 }
 
 @media (min-width: 580px) {
 
-  .expense-item__delete button {
+  .expense-item__update button {
     font-size: 1.25rem;
     padding: 0.25rem 0.75rem;
   }
