@@ -1,0 +1,51 @@
+form.upgrade {
+  background-color: #d3e1ee;
+    padding: 1rem;
+    margin: 0.5rem auto 2rem auto;
+    border-radius: 3px;
+}
+.upgrade__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.upgrade__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: rgb(21, 49, 63)
+}
+
+.upgrade__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  color: rgb(21, 39, 53);
+}
+
+.upgrade__actions {
+  text-align: right;
+}
+
+.upgrade__actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: 1px solid rgb(29, 99, 111);
+  background-color: rgb(29, 99, 111);
+  color: white;
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
+.upgrade__actions button:hover,
+.upgrade__actions button:active {
+  background-color: rgb(25, 73, 83);
+  border-color: rgb(25, 73, 83);
+}

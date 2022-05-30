@@ -1,0 +1,39 @@
+.expense-item__delete {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ef4136;
+  border-radius: 12px;
+}
+
+.expense-item__delete button {
+  width: 46.8px;
+  height: 46.8px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #ef4136;
+  background-color: #ef4136;
+  color: white;
+  border-radius: 9px;
+}
+
+.expense-item__delete button div {
+  height: 70%;
+  width: 70%;
+  background: url('../../images/basket.white.png') 0 0/100% 100% no-repeat;
+  margin: 0 auto;
+}
+
+.expense-item__delete button:hover,
+.expense-item__delete button:active {
+  background-color: #cd1b1b;
+  border-color: #cd1b1b;
+}
+
+@media (min-width: 580px) {
+
+  .expense-item__delete button {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.25rem;
+  }
+}
