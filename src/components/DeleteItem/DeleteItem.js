@@ -9,7 +9,7 @@ function DeleteItem({itemId, extractDIFromDI}) {
 
   return (
     <div className='expense-item__delete'>
-      <button onClick={deleteItemHandler}>Del</button>
+      <button onClick={deleteItemHandler}><div></div></button>
     </div>
   );
 }

@@ -10,15 +10,17 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
+  color: rgb(21, 49, 63)
 }
 
 .new-expense__control input {
   font: inherit;
   padding: 0.5rem;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid #ccc;
   width: 20rem;
   max-width: 100%;
+  color: rgb(21, 39, 53);
 }
 
 .new-expense__actions {

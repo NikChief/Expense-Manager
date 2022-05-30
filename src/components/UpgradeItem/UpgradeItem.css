@@ -7,19 +7,27 @@
 }
 
 .expense-item__update button {
+  width: 46.8px;
+  height: 46.8px;
   font: inherit;
   cursor: pointer;
-  border: 1px solid #40005d;
-  background-color: #40005d;
+  border: 1px solid #3ad36f;
+  background-color: #3ad36f;
   color: white;
-  border-radius: 12px;
-  padding: 0;
+  border-radius: 9px;
+}
+
+.expense-item__update button div {
+  height: 70%;
+  width: 100%;
+  background: url('../../images/pencil.white.png') 0 0/100% 100% no-repeat;
+  margin: 0 auto;
 }
 
 .expense-item__update button:hover,
 .expense-item__update button:active {
-  background-color: #510674;
-  border-color: #510674;
+  background-color: #0cc34c;
+  border-color: #0cc34c;
 }
 
 @media (min-width: 580px) {

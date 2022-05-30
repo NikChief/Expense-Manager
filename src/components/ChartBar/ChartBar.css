@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1.8%;
 }
 
 .chart-bar__inner {
@@ -17,8 +18,20 @@
   justify-content: flex-end;
 }
 
-.chart-bar__fill {
-  background-color: #4826b9;
+.chart-bar__fill-red {
+  background-color: #d04040;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.chart-bar__fill-yellow {
+  background-color: #e1dc32;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.chart-bar__fill-green {
+  background-color: #3ad36f;
   width: 100%;
   transition: all 0.3s ease-out;
 }

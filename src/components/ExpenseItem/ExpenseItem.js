@@ -30,8 +30,8 @@ function ExpenseItem({ expense, extractDIFromEI, extractUIFromEI }) {
         <div className='expense-item__description'>
           <h2>{expense.title}</h2>
           <div className='expense-item__price'>${expense.amount}</div>
-          < DeleteItem itemId={expense.id} extractDIFromDI={extractDeletedItem} />
           < UpgradeItem itemId={expense.id} upgradeItemFormOn={upgradeItemFormOn} />
+          < DeleteItem itemId={expense.id} extractDIFromDI={extractDeletedItem} />
         </div>
       </Card>
       {isUpdating && (< UpgradeItemForm expense={expense} upgradeItemFormOff={upgradeItemFormOff} extractUIFromUIF={extractUpgratedItem}/>)}

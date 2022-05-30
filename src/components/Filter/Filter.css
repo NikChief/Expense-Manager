@@ -7,13 +7,14 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 1rem 0;
 }
 
 .expenses-filter label {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  margin-right: 0.7rem;
 }
 
 .expenses-filter select {
@@ -21,4 +22,9 @@
   padding: 0.5rem 3rem;
   font-weight: bold;
   border-radius: 6px;
+  color: rgb(25, 73, 83);
+}
+
+select>option:checked {
+  box-shadow: 0 0 10px 100px #fff inset;
 }

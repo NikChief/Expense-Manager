@@ -11,13 +11,13 @@ function App() {
       }
     }) : 
     [
-      // { id: 1, date: new Date(2022, 1, 11), title: 'House design', amount: 3100 },
-      // { id: 2, date: new Date(2021, 2, 7), title: 'Car tools', amount: 1700 },
-      // { id: 3, date: new Date(2022, 3, 15), title: 'Teeth', amount: 2450 },
-      // { id: 4, date: new Date(2020, 5, 25), title: 'Party', amount: 2500 },
-      // { id: 5, date: new Date(2021, 3, 12), title: 'Trip to the sea', amount: 5100 },
-      // { id: 6, date: new Date(2022, 6, 4), title: 'Sport inventory', amount: 1200 },
-      // { id: 7, date: new Date(2022, 11, 21), title: 'PS5 Games', amount: 370 }
+      { id: 1, date: new Date(2022, 1, 11), title: 'House design', amount: 3100 },
+      { id: 2, date: new Date(2021, 2, 7), title: 'Car tools', amount: 1700 },
+      { id: 3, date: new Date(2022, 3, 15), title: 'Teeth', amount: 2450 },
+      { id: 4, date: new Date(2020, 5, 25), title: 'Party', amount: 2500 },
+      { id: 5, date: new Date(2021, 3, 12), title: 'Trip to the sea', amount: 5100 },
+      { id: 6, date: new Date(2022, 6, 4), title: 'Sport inventory', amount: 1200 },
+      { id: 7, date: new Date(2022, 11, 21), title: 'PS5 Games', amount: 370 }
     ]
 
   const [expenses, setExpenses] = useState(initial)
